@@ -1,0 +1,28 @@
+img {
+  float: left;
+  border-radius: 100%;
+  display: none;
+}
+
+.body {
+  animation: spin 3s linear infinite alternate-reverse;
+  background-repeat: no-repeat;
+}
+
+@keyframes spin {
+  0% {
+    background-image: url("/src/images/gandhi.jpg");
+  }
+  /* 25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  } */
+  100% {
+    background-image: url("/src/images/nehru.jpg");
+  }
+}
