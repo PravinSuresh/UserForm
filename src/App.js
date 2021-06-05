@@ -5,6 +5,7 @@ import Users from './Components/Users';
 import UserList from './Components/UserList';
 import Header from './Components/Header/index';
 import PropTypes, { number } from 'prop-types';
+import Headline from './Components/Headline/index';
 
 function App() {
   let [users,setUsers] = useState([]);
@@ -60,6 +61,9 @@ function App() {
   return (
     <>
     <Header />
+    <section className="main">
+      <Headline header="Posts" desc={"lorem20 a lot of ttext needs to ve added gere ifnore spelling mstahes"}/>
+    </section>
     <div className="App">
       <div className="box1">
         <UserList users={users}/>
