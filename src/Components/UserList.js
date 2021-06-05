@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const UserList = ({users}) => {
     const userList = users;
-    console.log(userList);
+    // console.log(userList);
     return ( 
         <>
             <table>

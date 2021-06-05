@@ -4,9 +4,9 @@ import './styles.scss';
 const Header = () => {
     return ( 
         <>
-            <header>
-                <div className="logo-container">
-                    <p className="logo-text">Logo</p>
+            <header className="header-component" data-test="header-component">
+                <div className="logo-container" data-test="logo-container">
+                    <p className="logo-text" data-test="logo-text">Logo</p>
                 </div>
             </header>
         </>

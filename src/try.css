@@ -1,28 +1,91 @@
-img {
+/* img {
   float: left;
   border-radius: 100%;
   display: none;
-}
+} */
 
-.body {
+/* .body {
   animation: spin 3s linear infinite alternate-reverse;
   background-repeat: no-repeat;
+} */
+
+body {
+  background-image: url("https://i.pinimg.com/originals/57/9e/d2/579ed2cedf82391c07ec8ca6d4812693.jpg");
 }
 
-@keyframes spin {
+.container1,
+.container2 {
+  display: inline-block;
+  width: 45%;
+}
+
+.container1 {
+  position: relative;
+}
+
+.muji {
+  height: 770px;
+  width: 210px;
+  margin-left: 80%;
+  animation: move-muji 5s linear infinite;
+}
+.wife {
+  /* border: 1px solid black; */
+  height: 740px;
+  width: 210px;
+  animation: wifemove 5s linear reverse infinite;
+}
+/* @keyframes spin {
   0% {
     background-image: url("/src/images/gandhi.jpg");
   }
-  /* 25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
-  } */
   100% {
     background-image: url("/src/images/nehru.jpg");
+  }
+} */
+
+@keyframes move-muji {
+  0% {
+    margin-left: 0%;
+    /* background-image: url("/src/images/muji.png"); */
+  }
+  25% {
+    margin-left: 15%;
+    /* background-image: url("/src/images/muji.png"); */
+  }
+  50% {
+    margin-left: 40%;
+    /* background-image: url("/src/images/muji.png"); */
+  }
+  75% {
+    margin-left: 80%;
+    /* background-image: url("/src/images/muji.png"); */
+  }
+  100% {
+    margin-left: 80%;
+    /* background-image: url("/src/images/muji.png"); */
+  }
+}
+
+@keyframes wifemove {
+  0% {
+    margin-left: 0%;
+    /* background-image: url("/src/images/mujiwife.png"); */
+  }
+  25% {
+    margin-left: 0%;
+    /* background-image: url("/src/images/mujiwife.png"); */
+  }
+  50% {
+    margin-left: 40%;
+    /* background-image: url("/src/images/mujiwife.png"); */
+  }
+  75% {
+    margin-left: 60%;
+    /* background-image: url("/src/images/mujiwife.png"); */
+  }
+  100% {
+    margin-left: 80%;
+    /* background-image: url("/src/images/mujiwife.png"); */
   }
 }
